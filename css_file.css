@@ -1,0 +1,40 @@
+.page-header {
+	text-align: center;
+}
+
+img {
+	text-align: center;
+	margin-top: -20px;
+	margin-bottom: -15px;
+}
+
+iframe {
+	margin-bottom: -14px;
+}
+
+.navbar {
+	margin-top: -21px;
+}
+
+table, th, td {
+	border: 2px solid gray;
+}
+
+.panel-title {
+	text-align: center;
+}	
+
+.match-table {
+	border-bottom: none;
+}
+
+.move-center {
+	text-align: center;
+}
+
+.cell-center {
+	text-align: center;
+}
+
+.calendar {
+}
