@@ -6,6 +6,8 @@
 		<link rel="stylesheet" href="css_file.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="responsive-calendar/0.8/css/responsive-calendar.css">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	</head>
 	<body>
@@ -131,7 +133,29 @@
 							<h3 class="panel-title">Calendar</h3>
 						</div>
 						<div class="panel-body">
-							<iframe src="https://www.google.com/calendar/embed?src=fq97i34llehnvcunuak56jub3o%40group.calendar.google.com&ctz=Europe/Helsinki" style="border: 0" width="300" height="300" frameborder="0" scrolling="no"></iframe>
+							<div class="container">
+								<!-- Responsive calendar - START -->
+								<div class="responsive-calendar">
+									<div class="controls">
+										<a class="pull-left" data-go="prev"><div class="btn btn-primary">Prev</div></a>
+										<h4><span data-head-year></span> <span data-head-month></span></h4>
+										<a class="pull-right" data-go="next"><div class="btn btn-primary">Next</div></a>
+									</div><hr/>
+									<div class="day-headers">
+										<div class="day header">Mon</div>
+										<div class="day header">Tue</div>
+										<div class="day header">Wed</div>
+										<div class="day header">Thu</div>
+										<div class="day header">Fri</div>
+										<div class="day header">Sat</div>
+										<div class="day header">Sun</div>
+									</div>
+									<div class="days" data-group="days">
+          
+									</div>
+								</div>
+								<!-- REsponsive calendar - END -->
+							</div>
 						</div>	
 					</div>
 				</div>
@@ -139,5 +163,20 @@
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script src="responsive-calendar/0.8/js/jquery.js"></script>
+		<script src="responsive-calendar/0.8/js/bootstrap.min.js"></script>
+		<script src="responsive-calendar/0.8/js/responsive-calendar.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$(".responsive-calendar").responsiveCalendar({
+					time: '2015-06-06',
+					events: {
+						"2015-06-07": {"number": 1, "url": "http://sportnation.free.bg"},
+						"2015-06-08": {"number": 1, "url": "http://sportnation.free.bg"}, 
+						"2015-06-09":{"number": 1}
+					}
+				});
+			});
+		</script>
 	</body>
 </html>
